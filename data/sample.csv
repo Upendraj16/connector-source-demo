@@ -1,0 +1,14 @@
+import csv
+import boto3
+import random
+import botocore
+from io import StringIO  # Used to read the content from S3 as a file-like object
+
+# Initialize the S3 client
+s3 = boto3.client('s3')
+bucket_name="mlflow-redshift"
+object_key = "test_event_data.csv"
+# Use this code snippet in your app.
+# If you need more information about configurations
+# or implementing the sample code, visit the AWS docs:
+# https://aws.amazon.com/developer/language/python/
